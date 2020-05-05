@@ -1,0 +1,85 @@
+#
+# NSGv 1
+#
+-
+
+    vmname: "nsgv1"
+    target_server_type: "vcenter"
+    target_server: "135.121.40.4"
+    bootstrap_method: zfb_metro
+    nsgv_ip: "10.10.13.101"
+    nsgv_mac: "52:54:10:10:13:01"
+    # mgmt_bridge: (global Bridge interface)
+    # data_bridge: (global Bridge interface)
+    # access_bridge: (global Bridge interface)
+    vcenter_datacenter: "Kanata"
+    vcenter_cluster: "Lab1"
+    vcenter_datastore: "Llama2-NFS1"
+    # vcenter_host_reference: (global vCenter Host Reference)
+    nsg_organization: "VNS1"
+    nsg_name: "NSG1"
+    match_type: mac_address
+    match_value: "52:54:10:10:13:01"
+    ssh_service: True
+
+    ##### NSG Advanced Options
+    nsg_template_name: "NSG_Template_1"
+    nsg_infra_profile_name: "Infra_Profile_1"
+    proxy_dns_name: "proxy.vns1"
+    ssh_override: True
+
+    ##### VSC Info
+    vsc_infra_profile_name: "VSC_Profile_1"
+    first_controller_address: "10.10.13.23"
+    second_controller_address: "10.10.13.24"
+    ##############
+    network_port_name: "port1_network"
+    network_port_physical_name: port1
+    access_port_name: "port3_access1"
+    access_port_physical_name: port3
+    access_port_vlan_range: "0-1000"
+    access_port_vlan_number: 111
+    access_ports: [ "port3_access1" ]
+
+#
+# NSGv 2
+#
+-
+
+    vmname: "nsgv2"
+    target_server_type: "vcenter"
+    target_server: "135.121.40.4"
+    bootstrap_method: zfb_metro
+    nsgv_ip: "10.10.13.102"
+    nsgv_mac: "52:54:10:10:13:02"
+    # mgmt_bridge: (global Bridge interface)
+    # data_bridge: (global Bridge interface)
+    # access_bridge: (global Bridge interface)
+    vcenter_datacenter: "Kanata"
+    vcenter_cluster: "Lab1"
+    vcenter_datastore: "Llama2-NFS1"
+    # vcenter_host_reference: (global vCenter Host Reference)
+    nsg_organization: "VNS1"
+    nsg_name: "NSG1"
+    match_type: mac_address
+    match_value: "52:54:10:10:13:02"
+    ssh_service: True
+
+    ##### NSG Advanced Options
+    nsg_template_name: "NSG_Template_1"
+    nsg_infra_profile_name: "Infra_Profile_1"
+    proxy_dns_name: "proxy.vns1"
+    ssh_override: True
+
+    ##### VSC Info
+    vsc_infra_profile_name: "VSC_Profile_1"
+    first_controller_address: "10.10.13.23"
+    second_controller_address: "10.10.13.24"
+    ##############
+    network_port_name: "port1_network"
+    network_port_physical_name: port1
+    access_port_name: "port3_access1"
+    access_port_physical_name: port3
+    access_port_vlan_range: "0-1000"
+    access_port_vlan_number: 121
+    access_ports: [ "port3_access1" ]

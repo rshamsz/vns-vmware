@@ -1,0 +1,20 @@
+#
+# NSGv 1
+#
+-
+    name: "port3_access1"
+    physical_name: port3
+    vlan_range: "0-1000"
+    vlan_number: 111
+    bridge: "branch1-access1"
+
+#
+# NSGv 2
+#
+-
+    name: "port3_access1"
+    physical_name: port3
+    vlan_range: "0-1000"
+    vlan_number: 121
+    bridge: "branch2-access1"
+

@@ -1,0 +1,39 @@
+#
+# VSC 1
+#
+-
+    hostname: "vsc1.vns1"
+    mgmt_ip: "192.168.11.23"
+    mgmt_ip_prefix: 24
+    mgmt_gateway: "192.168.11.1"
+    mgmt_static_route_list: [ 0.0.0.0/1, 128.0.0.0/1 ]
+    ctrl_ip: "192.168.12.23"
+    ctrl_ip_prefix: 24
+    ctrl_ip_vprn_list: ["13:10.10.13.23/24","14:10.10.14.23/24"]
+    system_ip: "192.168.100.23"
+    target_server_type: "vcenter"
+    target_server: "135.121.40.4"
+    vcenter_datacenter: "Kanata"
+    vcenter_cluster: "Lab1"
+    vcenter_datastore: "Llama2-NFS1"
+    enable_hardening: True
+#
+# VSC 2
+#
+-
+    hostname: "vsc2.vns1"
+    mgmt_ip: "192.168.11.24"
+    mgmt_ip_prefix: 24
+    mgmt_gateway: "192.168.11.1"
+    mgmt_static_route_list: [ 0.0.0.0/1, 128.0.0.0/1 ]
+    ctrl_ip: "192.168.12.24"
+    ctrl_ip_prefix: 24
+    ctrl_ip_vprn_list: ["13:10.10.13.24/24","14:10.10.14.24/24"]
+    system_ip: "192.168.100.24"
+    target_server_type: "vcenter"
+    target_server: "135.121.40.4"
+    vcenter_datacenter: "Kanata"
+    vcenter_cluster: "Lab1"
+    vcenter_datastore: "Llama2-NFS1"
+    enable_hardening: True
+
